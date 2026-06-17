@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Download, Shield, Smartphone, QrCode } from 'lucide-react'
+import { Download, Shield, Smartphone } from 'lucide-react'
 import { fadeInUp } from '../utils/animations.js'
 
 export default function DownloadCTA() {
@@ -40,7 +40,7 @@ export default function DownloadCTA() {
           variants={fadeInUp}
         >
           <motion.a
-            href="https://play.google.com/store"
+            href="https://play.google.com/store/apps/details?id=com.savemom.allobaby"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 text-text shadow-xl transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
@@ -73,17 +73,17 @@ export default function DownloadCTA() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <div className="flex h-36 w-36 items-center justify-center rounded-2xl border-2 border-dashed border-white/40 bg-white/10 backdrop-blur-sm">
-            <div className="text-center">
-              <QrCode className="mx-auto h-12 w-12 text-white/60" aria-hidden="true" />
-              <span className="mt-2 block text-xs text-white/60">QR Code</span>
-            </div>
+          <div className="flex h-36 w-36 items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-sm overflow-hidden">
+            <img 
+              src="./public/screenshots/QR-code.png" 
+              alt="AlloBaby app download QR code" 
+              className="h-full w-full object-cover"
+            />
           </div>
 
           <div className="max-w-sm text-center sm:text-left">
             <p className="text-sm text-white/80 leading-relaxed">
               Scan the QR code with your phone camera to download AlloBaby instantly.
-              Replace this placeholder with your actual app download QR code.
             </p>
             <div className="mt-4 flex items-center justify-center gap-2 sm:justify-start text-sm text-white/70">
               <Shield className="h-4 w-4" aria-hidden="true" />
