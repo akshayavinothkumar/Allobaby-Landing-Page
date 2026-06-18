@@ -75,7 +75,7 @@ export default function DownloadCTA() {
         >
           <div className="flex h-36 w-36 items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-sm overflow-hidden">
             <img 
-              src="./public/screenshots/QR-code.png" 
+              src="/screenshots/QR-Code.png" 
               alt="AlloBaby app download QR code" 
               className="h-full w-full object-cover"
             />
