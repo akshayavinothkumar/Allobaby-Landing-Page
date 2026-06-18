@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Heart, Download } from 'lucide-react'
+import icon from "../data/icon.jpeg";
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -40,9 +41,11 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         <a href="#" className="flex items-center gap-2 group" aria-label="AlloBaby home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl gradient-primary shadow-md">
-            <Heart className="h-5 w-5 text-white" fill="white" aria-hidden="true" />
-          </div>
+          <img
+            src={icon}
+            alt="AlloKonnect Logo"
+            className="h-10 w-10 object-contain rounded-md"
+            />
           <span className="text-xl font-bold text-text">
             Allo<span className="text-primary">Baby</span>
           </span>
