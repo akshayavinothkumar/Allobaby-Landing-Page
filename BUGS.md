@@ -15,4 +15,4 @@ When filing a new issue, include:
 - Browser and device details
 - Screenshot or screen recording (if applicable)
 
-Contact: admin@allobaby.app
+Contact: admin@savemom.app
